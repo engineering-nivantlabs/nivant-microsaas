@@ -1,3 +1,4 @@
+import AdminDashboard from "./pages/AdminDashboard"
 import { HashRouter, Routes, Route } from "react-router-dom"
 import Layout from "@/components/layout/Layout"
 import Home from "@/pages/Home"
@@ -19,7 +20,8 @@ function App() {
           <Route path="/tools/compliance-checker" element={<ComplianceChecker />} />
           <Route path="/tools/inventory-calculator" element={<InventoryCalculator />} />
         </Route>
-      </Routes>
+      <Route path="/admin" element={<AdminDashboard />} />
+          </Routes>
     </HashRouter>
   )
 }
